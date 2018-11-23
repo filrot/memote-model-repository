@@ -12,9 +12,7 @@
     </listOfUnitDefinitions>
     <fbc:listOfObjectives fbc:activeObjective="obj">
       <fbc:objective fbc:id="obj" fbc:type="maximize">
-        <fbc:listOfFluxObjectives>
-          <fbc:fluxObjective fbc:reaction="R_Biomass_pol" fbc:coefficient="1"/>
-        </fbc:listOfFluxObjectives>
+        <fbc:listOfFluxObjectives/>
       </fbc:objective>
     </fbc:listOfObjectives>
     <listOfParameters>
@@ -27708,28 +27706,6 @@
         <listOfProducts>
           <speciesReference constant="true" species="M_Acetoacetate_m" stoichiometry="1"/>
         </listOfProducts>
-      </reaction>
-      <reaction fast="false" id="R_Biomass_pol" reversible="true" metaid="R_Biomass_pol" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
-        <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <rdf:Description rdf:about="#R_Biomass_pol">
-              <bqbiol:is xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/sbo/SBO:0000629"/>
-                </rdf:Bag>
-              </bqbiol:is>
-            </rdf:Description>
-          </rdf:RDF>
-        </sbml:annotation>
-        <listOfReactants>
-          <speciesReference constant="true" species="M_DNA_c" stoichiometry="0.736322787140949"/>
-          <speciesReference constant="true" species="M_Glycogen_c" stoichiometry="4.61767461688929"/>
-          <speciesReference constant="true" species="M_Protein_cyt_c" stoichiometry="81.9371615811396"/>
-          <speciesReference constant="true" species="M_Putrescine_c" stoichiometry="6.70113502800759"/>
-          <speciesReference constant="true" species="M_RNA_c" stoichiometry="0.272767340562178"/>
-          <speciesReference constant="true" species="M_Spermidine_c" stoichiometry="4.53460265053145"/>
-          <speciesReference constant="true" species="M_Spermine_c" stoichiometry="1.20033599572891"/>
-        </listOfReactants>
       </reaction>
       <reaction fast="false" id="R_DNA_pol" reversible="true" metaid="R_DNA_pol" fbc:upperFluxBound="cobra_default_ub" fbc:lowerFluxBound="cobra_default_lb">
         <sbml:annotation xmlns:sbml="http://www.sbml.org/sbml/level3/version1/core">
